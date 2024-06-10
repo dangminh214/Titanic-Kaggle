@@ -38,3 +38,8 @@ predict_data = predict_data.fillna(predict_data['Fare'].mean())
 #predict_data.describe()
 res = model.predict(predict_data)
 ```
+
+### Result
+Located in submission.csv
+![image](https://github.com/dangminh214/Titanic-Kaggle/assets/51837721/0f7ab7d6-d8fb-4779-abd1-591dc886f4b9)
+
