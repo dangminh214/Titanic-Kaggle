@@ -6,7 +6,7 @@ train_data.isna().sum()
 ```
 ![image](https://github.com/dangminh214/Titanic-Kaggle/assets/51837721/1f5678e5-1f7c-4f59-a02d-1a6a602dda1b)
 
-## Data Process: 
+## Data Process
 Drop unnecessary columns from the dataset 
 ```ruby
 train_data.drop(columns=['Age'], inplace=True)
@@ -39,7 +39,6 @@ predict_data = predict_data.fillna(predict_data['Fare'].mean())
 res = model.predict(predict_data)
 ```
 
-### Result
-Located in submission.csv
+### Result (submission.csv)
 ![image](https://github.com/dangminh214/Titanic-Kaggle/assets/51837721/0f7ab7d6-d8fb-4779-abd1-591dc886f4b9)
 
