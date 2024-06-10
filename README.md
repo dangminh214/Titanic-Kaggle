@@ -26,5 +26,14 @@ X = train_data[features]
 ### Predict data 
 ```ruby
 from sklearn.ensemble import RandomForestClassifier
-model = RandomForestClassifier() 
+model = RandomForestClassifier()
+model.fit(X,y)
+test = pd.read_csv('dataset/test.csv')
+test_features = ['PassengerId', 'Pclass', 'SibSp', 'Parch', 'Fare']
+predict_data = test[test_features]
+print(predict_data)
+print(predict_data.isna().sum())
+predict_data = predict_data.fillna(predict_data['Fare'].mean())
+#predict_data.describe()
+res = model.predict(predict_data)
 ```
