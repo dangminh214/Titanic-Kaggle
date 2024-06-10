@@ -4,6 +4,7 @@
 ```ruby
 train_data.isna().sum()
 ```
+![image](https://github.com/dangminh214/Titanic-Kaggle/assets/51837721/1f5678e5-1f7c-4f59-a02d-1a6a602dda1b)
 
 ## Data Process: 
 Drop unnecessary columns from the dataset 
